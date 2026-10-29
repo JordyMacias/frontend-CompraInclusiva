@@ -9,7 +9,7 @@ import { mockCategories, mockProducts, filterMockProducts } from '../data/mockPr
 // disponible. Con true, la tienda funciona sin servidor.
 // =====================================================
 
-export const USE_MOCK_DATA = false;
+export const USE_MOCK_DATA = true;
 
 // --- Helper para simular latencia de red en modo mock ---
 function delay(ms = 200) {
