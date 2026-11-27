@@ -13,18 +13,18 @@ import {
 // =====================================================
 
 describe('formatPrice', () => {
-  it('formatea un precio en euros', () => {
+  it('formatea un precio en dólares', () => {
     const result = formatPrice(29.99)
-    // Verificar que contiene el número y el símbolo (independiente del tipo de espacio del locale)
+    // Verificar que contiene el número y el símbolo
     expect(result).toContain('29')
     expect(result).toContain('99')
-    expect(result).toContain('€')
+    expect(result).toContain('$')
   })
 
   it('formatea cero correctamente', () => {
     const result = formatPrice(0)
     expect(result).toContain('0')
-    expect(result).toContain('€')
+    expect(result).toContain('$')
   })
 
   it('formatea precios grandes con separador', () => {
@@ -32,7 +32,7 @@ describe('formatPrice', () => {
     // Contiene el número y el símbolo
     expect(result).toContain('1')
     expect(result).toContain('000')
-    expect(result).toContain('€')
+    expect(result).toContain('$')
   })
 })
 
