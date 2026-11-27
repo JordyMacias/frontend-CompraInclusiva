@@ -32,8 +32,6 @@ Para generar la versión de producción (la misma que ejecuta el workflow):
 npm run build      # ejecuta "tsc -b && vite build" y crea la carpeta dist/
 ```
 
-> Ajustar si en `package.json` los nombres de los scripts son distintos.
-
 ## Estrategia de ramas
 
 Se usa un flujo simple basado en ramas cortas y Pull Request (GitHub Flow):
